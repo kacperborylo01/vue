@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto de Artistas Internacionales </title>
+</head>
+<body>
+    <div id = "app">
+
+        <h1 v-html="tittle"></h1>
+        
+        <cantante></cantante>
+  
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <script src="ProyectoCantantes/Cantante.js"></script>
+    <link rel="stylesheet" href="cantantes.css">
+    
+   
+
+    <script>
+        let vm = new Vue({
+    
+            el:'#app',
+    
+            data(){
+                return{
+                    tittle: ' <strong>Artistas Polacos de rap más reconocidos</strong>'
+                }
+            },
+    
+            components: {
+                Cantante
+                
+               
+            }
+        })
+    </script>
+</body>
+</html>
